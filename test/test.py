@@ -115,7 +115,6 @@ async def test_project(dut):
 
 @cocotb.test()
 async def compare_reference(dut):
-    cocotb.pass_test()
 
     for img in glob.glob("output/frame*.png"):
         basename = img.removeprefix("output/")
